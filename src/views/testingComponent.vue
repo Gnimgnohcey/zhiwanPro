@@ -14,6 +14,7 @@ export default {
     },
     mounted(){
         this.$store.dispatch("testVuex",1)
+        
         exampleHttpRquest().then(result=>{
             // eslint-disable-next-line no-console
             console.log('测试axios回调', result)
